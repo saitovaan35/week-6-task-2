@@ -1,0 +1,81 @@
+.container {
+    display: grid;
+    width: 100%;
+    min-height: 600px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+header {
+    background-color: rgb(141, 174, 174);
+    grid-area: 1 / 1 / 2 / 4; 
+    align-content: center;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main {
+display: grid;
+grid-area: 2 / 1 / 5 / 3;
+background-color:  rgb(234, 217, 196);
+grid-template-columns: repeat(2,1 fr);
+grid-template-rows: repeat(4,1 fr);
+align-items: center;
+justify-items: center;
+
+}
+
+.box-1 {
+    grid-area: 3 / 1 / 4 / 2;
+    background-color: rgb(214, 166, 102);
+    width: 45%;
+}
+.box-2 {
+    grid-area: 3 / 2 / 4 / 3;
+    background-color: rgb(214, 166, 102);
+    width: 45%;
+}
+.box-3 {
+    background-color: rgb(214, 166, 102);
+    grid-area: 4 / 1 / 5 / 3; 
+    width: 90%;
+}
+
+
+
+.sidebar {
+background-color: aquamarine;
+grid-area: 2 / 3 / 5 / 4;
+}
+footer {
+display: grid;
+justify-items: center;
+align-items: center;
+gap: 10px;
+grid-area: 5/1/6/4;
+background-color: rgb(141, 174, 174);
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-template-areas: 
+    "square-1 square-2 square-3 square-4"
+    "square-1 square-2 square-3 square-4"
+    "square-1 square-2 square-3 square-4" 
+
+}
+
+.square-1 {
+    grid-area: square-1;
+    background-color: rgb(144, 46, 235)
+}
+.square-2 {
+    grid-area: square-2;
+    background-color: rgb(144, 46, 235)
+}
+.square-3 {
+    grid-area: square-3;
+    background-color: rgb(144, 46, 235)
+}
+.square-4 {
+    grid-area: square-4;
+    background-color: rgb(144, 46, 235)
+}
